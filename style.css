@@ -9,15 +9,27 @@ body {
     border-width: 3px;
     border-color: #c7c7c7;
     border-style: solid;
-    margin:auto;
-    vertical-align: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 .rows {
-    height:5px;
+    flex-grow: 1;
+    flex-shrink: 1;
     display: flex;
 }
 .boxes {
-    min-width: 5px;
-    max-width: 5px;
-    width:5px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+#sizebutton {
+    width: auto;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button {
+    padding: 10px;
 }
